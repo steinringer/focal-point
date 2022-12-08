@@ -1,6 +1,6 @@
 # focal-point
 
-[![npm version](https://img.shields.io/npm/v/image-focus.svg)](https://www.npmjs.com/package/@steinringer/focal-point)
+[![npm version](https://img.shields.io/npm/v/@steinringer/focal-point)](https://www.npmjs.com/package/@steinringer/focal-point)
 
 # Installation
 ```npm
