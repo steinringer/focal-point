@@ -14,7 +14,6 @@ export class FocalPointFocus {
         styleAssign(this.container.style, CONTAINER_STYLES);
         styleAssign(this.img.style, IMAGE_STYLES, ABSOLUTE_STYLES);
 
-        this.processImage(focal);
         if (this.img.complete && this.img.naturalWidth > 0) {
             this.processImage(focal);
         } else {
