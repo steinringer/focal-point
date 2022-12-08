@@ -19,7 +19,7 @@ export const IMAGE_STYLES = {
   minWidth: '100%',
 };
 
-export interface FocalPoint {
+export interface FocalPoints {
   x: number;
   y: number;
 }

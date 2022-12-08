@@ -1,5 +1,5 @@
 import {
-  FocalPoint,
+  FocalPoints,
   styleAssign,
   CONTAINER_STYLES,
   IMAGE_STYLES,
@@ -12,13 +12,13 @@ export class FocalPointFocus {
   img: HTMLImageElement;
   container: HTMLElement;
 
-  constructor(img: HTMLImageElement, focal: FocalPoint) {
+  constructor(img: HTMLImageElement, focal: FocalPoints) {
     this.img = img;
     this.container = img.parentElement as HTMLElement;
     this.setFocus(focal);
   }
 
-  setFocus(focal: FocalPoint) {
+  setFocus(focal: FocalPoints) {
     styleAssign(this.container.style, CONTAINER_STYLES);
     styleAssign(this.img.style, IMAGE_STYLES, ABSOLUTE_STYLES);
 
@@ -32,7 +32,7 @@ export class FocalPointFocus {
     }
   }
 
-  private processImage(focal: FocalPoint): void {
+  private processImage(focal: FocalPoints): void {
     const { naturalWidth: imageW, naturalHeight: imageH } = this.img;
     const { width: containerW, height: containerH } = this.container.getBoundingClientRect();
 
